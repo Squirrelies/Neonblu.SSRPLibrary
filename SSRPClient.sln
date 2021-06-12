@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SSRPClient", "SSRPClient\SSRPClient.csproj", "{1D42E10E-BA29-46F2-A9B3-744B9EA2DC60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSRPClient.Tester", "SSRPClient.Tester\SSRPClient.Tester.csproj", "{A444975A-088A-4CA5-8337-392E393D1B10}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D42E10E-BA29-46F2-A9B3-744B9EA2DC60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D42E10E-BA29-46F2-A9B3-744B9EA2DC60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D42E10E-BA29-46F2-A9B3-744B9EA2DC60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D42E10E-BA29-46F2-A9B3-744B9EA2DC60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A444975A-088A-4CA5-8337-392E393D1B10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A444975A-088A-4CA5-8337-392E393D1B10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A444975A-088A-4CA5-8337-392E393D1B10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A444975A-088A-4CA5-8337-392E393D1B10}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F5F3B525-E356-46C3-9A03-C58A66AB4063}
+	EndGlobalSection
+EndGlobal

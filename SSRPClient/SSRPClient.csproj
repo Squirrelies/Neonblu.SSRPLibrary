@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Platforms>AnyCPU</Platforms>
+    <Authors>Travis J. Gutjahr</Authors>
+    <Company>Travis J. Gutjahr</Company>
+    <Copyright>Copyright © 2021 Travis J. Gutjahr</Copyright>
+    <Product>SQL Server Resolution Protocol client</Product>
+    <Description>A SQL Server Resolution Protocol client for Microsoft SQL Server discovery.</Description>
+    <Version>1.0.0.0</Version>
+    <FileVersion>1.0.0.0</FileVersion>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="5.0.0" />
+  </ItemGroup>
+
+</Project>
