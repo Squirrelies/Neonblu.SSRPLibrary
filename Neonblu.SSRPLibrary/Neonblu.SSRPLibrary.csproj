@@ -13,10 +13,19 @@
     <FileVersion>1.0.0.0</FileVersion>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <DebugType>embedded</DebugType>
+    <PackageProjectUrl>https://github.com/Squirrelies/Neonblu.SSRPLibrary</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Squirrelies/Neonblu.SSRPLibrary.git</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="5.0.0" />
   </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(BuildingInsideVisualStudio)' == 'true' And '$(TJGutjahr)' == 'true'">
+    <Exec Command="&quot;C:\Program Files (x86)\Windows Kits\10\bin\10.0.19041.0\x64\signtool.exe&quot; sign /tr &quot;http://timestamp.digicert.com&quot; /td SHA1 /sha1 &quot;027e4c2a016f695ab4adefda2d326199b571bf0a&quot; /fd SHA1 &quot;$(TargetDir)\$(AssemblyName).dll&quot;&#xD;&#xA;&quot;C:\Program Files (x86)\Windows Kits\10\bin\10.0.19041.0\x64\signtool.exe&quot; sign /tr &quot;http://timestamp.digicert.com&quot; /td SHA256 /sha1 &quot;027e4c2a016f695ab4adefda2d326199b571bf0a&quot; /fd SHA256 /as &quot;$(TargetDir)\$(AssemblyName).dll&quot;&#xD;&#xA;&quot;C:\Program Files (x86)\Windows Kits\10\bin\10.0.19041.0\x64\signtool.exe&quot; sign /tr &quot;http://timestamp.digicert.com&quot; /td SHA512 /sha1 &quot;027e4c2a016f695ab4adefda2d326199b571bf0a&quot; /fd SHA512 /as &quot;$(TargetDir)\$(AssemblyName).dll&quot;&#xD;&#xA;" />
+  </Target>
 
 </Project>
