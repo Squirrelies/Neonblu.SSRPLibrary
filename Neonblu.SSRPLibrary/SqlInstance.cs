@@ -1,4 +1,4 @@
-﻿namespace SSRPClient
+﻿namespace Neonblu.SSRPLibrary
 {
     public record SqlInstance
     {

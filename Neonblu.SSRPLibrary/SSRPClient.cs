@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace SSRPClient
+namespace Neonblu.SSRPLibrary
 {
     public class SSRPClient : IDisposable
     {

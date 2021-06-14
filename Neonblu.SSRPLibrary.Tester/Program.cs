@@ -2,7 +2,7 @@
 using System.Data;
 using System.Threading.Tasks;
 
-namespace SSRPClient.Tester
+namespace Neonblu.SSRPLibrary.Tester
 {
     public static class Program
     {
